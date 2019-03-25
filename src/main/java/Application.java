@@ -6,7 +6,7 @@ import org.glassfish.jersey.server.ResourceConfig;
 import org.glassfish.jersey.servlet.ServletContainer;
 
 
-public class Main {
+public class Application {
     public static void main(String[] args) throws Exception {
         ResourceConfig config = new RestConfig();
         ServletHolder jerseyServlet = new ServletHolder(new ServletContainer(config));

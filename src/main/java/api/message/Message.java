@@ -1,20 +1,31 @@
 package api.message;
 
-import javax.inject.Inject;
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-@Path("msg")
+@Entity
 public class Message {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
 
-    @Inject
-    private Service service;
+    private String message;
 
-    @GET
-    @Produces(MediaType.TEXT_PLAIN)
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public String getMessage() {
-        return service.message();
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }
