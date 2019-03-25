@@ -4,7 +4,7 @@ plugins {
 
 group 'example'
 
-sourceCompatibility = 12
+sourceCompatibility = 11
 
 repositories {
     jcenter()
@@ -27,7 +27,7 @@ dependencies {
     compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-jetty-http', version: '2.28'
     compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.28'
     compile group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '2.28'
-    
+
     compile group: 'org.glassfish.jersey.ext.cdi', name: 'jersey-weld2-se', version: '2.28'
 
     testCompile 'junit:junit:4.12'

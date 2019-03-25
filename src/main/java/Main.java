@@ -9,10 +9,10 @@ import java.net.URI;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        URI baseUri = UriBuilder.fromUri("http://localhost/").port(9998).build();
+        URI baseUri = UriBuilder.fromUri("http://localhost/").port(8080).build();
         Server server = JettyHttpContainerFactory.createServer(baseUri, new RestConfig());
         try {
-            server.addEventListener(new Listener());
+            //server.addEventListener(new Listener());
 
             server.start();
             server.join();
