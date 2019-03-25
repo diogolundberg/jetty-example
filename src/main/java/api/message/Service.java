@@ -2,9 +2,7 @@ package api.message;
 
 
 public class Service {
-
-    public String message() {
+    String message() {
         return "api.message ok";
     }
-
 }

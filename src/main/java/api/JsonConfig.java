@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 @Provider
-public class JsonConfig implements ContextResolver<ObjectMapper>
+class JsonConfig implements ContextResolver<ObjectMapper>
 {
     final ObjectMapper mapper;
 

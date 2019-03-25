@@ -1,6 +1,5 @@
 package api.message;
 
-import javax.annotation.ManagedBean;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -16,8 +15,6 @@ public class Message {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String getMessage() {
-
-
         return service.message();
     }
 }
