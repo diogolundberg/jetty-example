@@ -1,7 +1,7 @@
 package api;
 
 import api.message.MessageService;
-import org.glassfish.hk2.utilities.binding.AbstractBinder;
+import org.glassfish.jersey.internal.inject.AbstractBinder;
 
 class BinderConfig extends AbstractBinder {
     @Override
