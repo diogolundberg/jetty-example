@@ -20,22 +20,14 @@ repositories {
 dependencies {
     compile group: 'javax.ws.rs', name: 'javax.ws.rs-api', version: '2.1.1'
     compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.3.1'
-    compile group: 'javax.enterprise', name: 'cdi-api', version: '2.0'
 
     compile group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.4.15.v20190215'
     compile group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '9.4.15.v20190215'
 
     compile group: 'org.glassfish.jersey.core', name: 'jersey-server', version: '2.28'
     compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet-core', version: '2.28'
-    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.28'
     compile group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '2.28'
-
-    // https://mvnrepository.com/artifact/org.apache.deltaspike.core/deltaspike-core-api
-    compile group: 'org.apache.deltaspike.core', name: 'deltaspike-core-api', version: '1.9.0'
-    compile group: 'org.apache.deltaspike.cdictrl', name: 'deltaspike-cdictrl-api', version: '1.9.0'
-    compile group: 'org.apache.deltaspike.cdictrl', name: 'deltaspike-cdictrl-servlet', version: '1.9.0'
-// https://mvnrepository.com/artifact/org.apache.deltaspike.cdictrl/deltaspike-cdictrl-weld
-    testCompile group: 'org.apache.deltaspike.cdictrl', name: 'deltaspike-cdictrl-weld', version: '1.9.0'
+    compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.28'
 
     compile group: 'org.hibernate', name: 'hibernate-entitymanager', version: '5.4.2.Final'
     compile group: 'com.h2database', name: 'h2', version: '1.4.199'
